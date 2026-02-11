@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contattami – Imma Carano UXUI Designer</title>
+  <meta name="description" content="Mettiamoci in contatto per collaborare a progetti innovativi di UX/UI Design e accessibilità.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://IL-TUO-USERNAME.github.io/NOME-REPO/contatti.html">
+<meta property="og:title" content="Lavoriamo insieme | Contatta Imma Carano">
+<meta property="og:description" content="Hai un progetto in mente o vuoi semplicemente fare due chiacchiere sul design? Scrivimi qui.">
+<meta property="og:image" content="https://IL-TUO-USERNAME.github.io/NOME-REPO/assets/img/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lavoriamo insieme | Contatta Imma Carano">
+<meta name="twitter:description" content="Parliamo del tuo prossimo progetto digitale.">
+<meta name="twitter:image" content="https://IL-TUO-USERNAME.github.io/NOME-REPO/assets/img/og-image.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="leader">
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <div class="leader-inner container">
+      <span class="leader-name">Imma Carano</span>
+
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="leader-nav">
+        <a href="index.html#about">Chi sono</a>
+        <a href="index.html#projects">Progetti</a>
+        <a href="cv.html" class="btn-cv-header">Esperienze</a>
+        <a href="contatti.html" class="btn-contact-header">Lavoriamo insieme</a>
+        
+        <div class="header-socials">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </nav>
+    </div>
+
+    <nav class="mobile-menu">
+      <a href="index.html#about">Chi sono</a>
+      <a href="index.html#projects">Progetti</a>
+      <a href="cv.html">Esperienze</a>
+      <a href="contatti.html">Lavoriamo insieme</a>
+      <hr>
+      <div class="mobile-socials">
+          <a href="#"><i class="fab fa-github"></i> GitHub</a>
+          <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </nav>
+
+    <label for="menu-toggle" class="menu-overlay"></label>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact container py-5">
+      <div class="contact-inner animate is-visible">
+        <div class="contact-header text-center mb-5">
+          <h1 class="display-4 fw-bold">Parliamo del tuo progetto</h1>
+          <p class="lead text-muted">Hai un'idea da sviluppare o un puzzle digitale che non riesci a comporre? Raccontami tutto.</p>
+        </div>
+
+        <form class="contact-form bg-white p-4 p-md-5 rounded-4 shadow-sm">
+          <div class="form-group mb-4">
+            <label for="subject" class="form-label">Come posso aiutarti?</label>
+            <select id="subject" name="subject" class="form-select" required>
+              <option value="" disabled selected>Seleziona un'opzione...</option>
+              <option value="progetto">Voglio creare o rinnovare il mio brand</option>
+              <option value="collaborazione">Ho bisogno di capire meglio i miei utenti</option>
+              <option value="consulenza">Il mio sito non è accessibile a tutti</option>
+              <option value="saluto">Altro</option>
+            </select>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" id="name" name="name" class="form-control" required placeholder="Inserisci il tuo nome">
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="la-tua@email.com">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="message" class="form-label">Messaggio</label>
+            <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Descrivi brevemente di cosa hai bisogno..."></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="submit-btn py-3 px-5 w-auto">
+              Invia Messaggio <i class="fas fa-paper-plane ms-2"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-note">Pensato per le persone, costruito per durare.</p>
+    <p>© 2026 Imma Carano</p>
+    <div class="footer-links">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    const elements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

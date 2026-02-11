@@ -1,0 +1,1034 @@
+
+/* SOCIALS NELL'HEADER */
+.header-socials {
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid #ddd;
+    padding-left: 1rem;
+}
+
+.header-socials i {
+    font-size: 1.5rem;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.hero-sub {
+    display: block;
+    color: #1a1a1a;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    margin-top: 10px;
+}
+
+/* SEZIONE ABOUT / INTRO non cancellare */ 
+.intro {
+    padding: 100px 0;
+}
+
+.intro-profile {
+    display: flex;
+    gap: 4rem;
+    align-items: left;
+}
+
+.intro-avatar {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+#menu-toggle:checked ~ .leader-inner .hamburger {
+  span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+    background-color: #c7c7c7; 
+  }
+  span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+    background-color: #ddd;
+  }
+}
+
+.hamburger span {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+
+/* ================= OVERLAY ================= */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 900;
+}
+
+#menu-toggle:checked ~ .menu-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .leader-nav { display: none; }
+  .hamburger { display: flex; }
+}
+
+@media (min-width: 992px) {
+  .mobile-menu, .menu-overlay, .hamburger { display: none; }
+}
+
+@media (max-width: 768px) {
+  .about-text .more-text { display: none; }
+  #about-toggle:checked ~ .about-text .more-text { display: inline; }
+  .btn-link { display: inline-flex; }
+  .intro-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  .intro-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .btn-link .less { display: none; }
+  #about-toggle:checked ~ .about-actions .more { display: none; }
+  #about-toggle:checked ~ .about-actions .less { display: inline; }
+  .about-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .btn-link, .btn-cv {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+
+/* ==========================================================================
+   3. BREADCRUMBS & HERO CV
+   ========================================================================== */
+.breadcrumb-mini { padding: 40px 20px 20px; max-width: 1200px; margin: 0 auto; }
+.breadcrumb-row {
+  display: flex;
+  list-style: none;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  gap: 10px;
+}
+.breadcrumb-row a { color: #94a3b8; text-decoration: none; }
+/* EFFETTO AL PASSAGGIO DEL MOUSE (HOVER) */
+.breadcrumb-row a:hover {
+    color: #007aff;
+}
+.breadcrumb-row .active { color: #0f172a; font-weight: 700; }
+
+
+
+/* ==========================================================================
+   4. CV CARDS (Stile Senior - No Hover, No Overlay)
+   ========================================================================== */
+.cv-section { margin-bottom: 60px; padding: 0 20px; }
+.cv-section h2 { 
+  font-size: 0.8rem; 
+  text-transform: uppercase; 
+  letter-spacing: 3px; 
+  color: #94a3b8; 
+  margin-bottom: 30px; 
+  font-weight: 700;
+  text-align: center;
+}
+
+.cv-card {
+  background: #c7c7c7;
+  border-radius: 24px;
+  padding: 35px;
+  margin: 0 auto 20px auto;
+  border: 1px solid #e2e8f0; /* Bordo pulito */
+  max-width: 800px;
+  text-align: left;
+}
+
+.cv-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 4px; }
+.cv-company { display: block; color: #6366f1; font-weight: 600; font-size: 1rem; margin-bottom: 4px; }
+.cv-meta { display: block; font-size: 0.85rem; color: #94a3b8; font-weight: 500; margin-bottom: 15px; }
+
+.cv-details { list-style: none; padding: 0; }
+.cv-details li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #475569;
+  font-size: 0.95rem;
+}
+.cv-details li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1a1a1a;
+}
+
+.cv-description { color: #475569; font-size: 1rem; }
+
+/* ==========================================================================
+   5. BADGES (Pills Coerenti per Skills, Lingue, Hobbies)
+   ========================================================================== */
+.skills-grid, .ui-group { 
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 10px; 
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-badge {
+  background: #fff;
+  color: #475569;
+  padding: 8px 20px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #e2e8f0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-level {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 400;
+  border-left: 1px solid #e2e8f0;
+  padding-left: 8px;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   5. MEDIA QUERIES (DESKTOP)
+   ========================================================================== */
+@media (min-width: 992px) {
+    .hamburger {
+        display: none; /* Nasconde l'hamburger su schermi grandi */
+    }
+    .leader-nav {
+        display: flex; /* Mostra i link orizzontali */
+    }
+    .mobile-menu, .menu-overlay {
+        display: none !important;
+    }
+}
+
+
+
+/* ================= INTRO & BUTTONS non cancellare ================= */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.intro-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.intro-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+
+/* ==========================================================================
+   PROJECTS SECTION (Bottoni con cambio colore, NO Overlay/Ombra)
+   ========================================================================== */
+.projects { 
+    padding: 100px 0; 
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 28px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); /* Ombra leggerissima per la card */
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    line-height: 0;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+.project-card:hover .project-image img { 
+    transform: scale(1.04); 
+}
+
+/* ==========================================================================
+   IL BOTTONE CASE STUDY (Cambio colore pulito - NO Overlay)
+   ========================================================================== */
+.btn-case-study {
+    display: block;
+    text-align: center;
+    background: #222;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transizione solo colore e movimento */
+    margin-top: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-case-study:hover {
+    background: #007aff; /* Cambia colore al passaggio */
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: none; 
+}
+
+/* CHECKLIST & BADGES */
+.checklist span {
+    background: #f1f5f9;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: none;
+    letter-spacing: 0px;
+}
+
+.badge.pink { background: #7c3aed; }
+.badge.blue { background: #0ea5e9; }
+
+.project-image img {
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+    display: block;
+}
+
+.project-card:hover .project-image img { 
+    transform: scale(1.06); 
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    display: flex;
+    gap: 8px;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+
+.project-card h3 { 
+    margin-bottom: 10px; 
+    font-size: 1.5rem; 
+    color: #0f172a; 
+}
+
+.project-card p { 
+    color: #475569; 
+    margin-bottom: 20px; 
+}
+
+.checklist {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.checklist span {
+    background: #f1f5f9;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+
+
+
+/* ================= FOOTER ================= */
+.footer { padding: 48px 16px; text-align: center; font-size: 0.8rem; color: #64748b; border-top: 1px solid #e2e8f0; }
+.footer-links { display: flex; justify-content: center; gap: 16px; }
+.footer-links a { color: #007aff; text-decoration: none; }
+
+/* ================= ANIMATIONS ================= */
+.animate { opacity: 0; transform: translateY(60px); transition: 0.8s ease; }
+.animate.is-visible { opacity: 1; transform: translateY(0); }
+
+/* ================= CV PAGE STYLES ================= */
+.cv-hero { padding: 100px 0 80px; }
+.cv-avatar { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; margin-bottom: 24px; box-shadow: 0 10px 30px rgba(0,0,0,.05); }
+.cv-name { font-size: 2.4rem; font-weight: 800; color: #0f172a; }
+.cv-card {
+  background: #fff; border-radius: 20px; padding: 30px; margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03); width: 100%; max-width: 700px;
+  margin-left: auto; margin-right: auto;
+}
+
+/* --- STILE CV GENERALE --- */
+body.cv-page {
+    font-family: 'Inter', sans-serif;
+    background-color: #fcfcfc;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.cv-hero {
+    padding: 80px 0 40px;
+}
+
+.cv-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.cv-name {
+    font-weight: 800;
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+}
+
+.cv-role {
+    font-weight: 500;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* --- IL TASTO DOWNLOAD (UX OPTIMIZED) --- */
+.cv-cta-container {
+    margin: 10px 0;
+}
+
+.btn-cv-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #007aff; 
+    color: #ffffff !important;
+    padding: 8px 32px;
+    border-radius: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+  }
+
+.btn-cv-download:hover {
+    background-color: #1a1a1a;
+}
+
+.btn-cv-download .icon {
+    font-size: 1.2rem;
+}
+
+/* --- SKILLS & CARDS --- */
+.skill-badge {
+    display: inline-block;
+    background: #eee;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 4px;
+}
+
+.cv-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    margin: 20px auto;
+    border: 1px solid #eaeaea;
+    max-width: 750px;
+    text-align: left;
+}
+
+.cv-company { font-weight: 700; color: #007aff; display: block; margin-bottom: 5px; }
+.cv-meta { font-size: 0.85rem; color: #888; display: block; margin-bottom: 15px; }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 576px) {
+    .cv-name { font-size: 2rem; }
+    .btn-cv-download { width: 100%; justify-content: center; }
+}
+
+
+/* CERT TRACK ANIMATION */
+.certificates-track { display: flex; gap: 32px; animation: scroll-certificates 25s linear infinite; }
+@keyframes scroll-certificates { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+@media (max-width: 768px) {
+  section, .intro, .projects, .skills, .certificates, .cv-section {
+    padding-left: 24px; padding-right: 24px;
+  }
+}
+/* --- Gestione Leggi di Più (In linea e scompare al click) --- */
+.more-text {
+  display: none;
+}
+
+#about-toggle:checked ~ .more-text {
+  display: inline;
+}
+
+/* Quando la checkbox è selezionata, nasconde il bottone/label */
+#about-toggle:checked ~ .btn-link-toggle {
+  display: none;
+}
+
+.btn-link-toggle {
+  cursor: pointer;
+  color: var(--primary, #007aff);
+  font-weight: regular;
+  text-decoration: underline;
+  margin-left: 5px;
+  display: inline;
+}
+
+/* --- Bottoni Minimali sotto il testo --- */
+.about-actions-new {
+  margin-top: 35px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-minimal {
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Bottone 1: Minimal Dark Outline (CV) */
+.btn-dark-outline {
+  border: 1px solid #007aff;
+  color: #fff;
+  background: #007aff;
+}
+
+.btn-dark-outline:hover {
+  background: #222;
+  color: #fff;
+  border: 1px solid #222;
+
+}
+
+/* Bottone 2: Minimal Primary Filled (Progetti) */
+.btn-primary-filled {
+  background: var(--primary, #fff);
+  color: #222;
+  border: 1px solid var(--primary, #222);
+}
+
+.btn-primary-filled:hover {
+  background: #222;
+  color: #fff;
+  border: 1px solid #222;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+  .about-actions-new {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn-minimal {
+    width: 100%;
+  }
+}
+/* ==========================================================================
+   HEADER & NAVIGATION (Stile Breadcrumbs + Hamburger Fix)
+   ========================================================================== */
+.leader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px; 
+    z-index: 1100;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.leader-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.leader-name {
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #0f172a;
+    letter-spacing: 2px;
+}
+
+/* NAV DESKTOP */
+.leader-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.leader-nav a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.leader-nav a:hover {
+    color: #007aff;
+}
+
+.btn-cv-header {
+    background-color: #007aff;
+    color: #fff !important;
+    padding: 8px 18px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+    display: inline-flex;
+    align-items: center;
+}
+.btn-cv-header:hover {
+    background-color: #1a1a1a;
+}
+
+/* SOCIALS */
+.header-socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
+    border-left: 1px solid #e2e8f0;
+}
+
+/* ==========================================================================
+   LOGICA HAMBURGER (IL FIX)
+   ========================================================================== */
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none; /* Nascosto di default su desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 16px;
+    cursor: pointer;
+    z-index: 1200;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVE: Qui facciamo ricomparire l'hamburger */
+@media (max-width: 991px) {
+    .leader-nav, .header-socials {
+        display: none; /* Nasconde menu esteso su mobile */
+    }
+
+    .hamburger {
+        display: flex; /* Fa ricomparire l'hamburger su mobile */
+    }
+
+    /* Animazione X */
+    #menu-toggle:checked + .leader-inner .hamburger span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    #menu-toggle:checked + .leader-inner .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked + .leader-inner .hamburger span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+/* MOBILE MENU SLIDE-IN */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #1a1a1a;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: 0.4s ease;
+    z-index: 1100;
+}
+
+.mobile-menu a {
+    color: #e8f6ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+#menu-toggle:checked ~ .mobile-menu {
+    right: 0;
+}
+
+body {
+    padding-top: 75px;
+    /* MODIFICA QUI LO SFONDO DI TUTTO IL PROGETTO */
+    background-color: #f3f6f8; /* Un grigio neutro molto chiaro, ottimo per la UX */
+    color: #1a1a1a; /* Colore del testo principale */
+}
+
+/* ==========================================================================
+   8. COMPONENTI & CONTACT FORM
+   ========================================================================== */
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+
+/* Label del Form per UX */
+.contact-form label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: -8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* INPUT, TEXTAREA E SELECT */
+.contact-form input, 
+.contact-form textarea,
+.contact-form select {
+    width: 100%; 
+    padding: 16px; 
+    border-radius: 12px; 
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: #0f172a;
+    transition: all 0.3s ease;
+}
+
+
+/* BOTTONE FORM CON ICONA */
+.contact-form button {
+    padding: 10px 32px; 
+    border-radius: 50px;
+    border: 1px solid #007aff;
+    background: #007aff;
+    color: #fff; 
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background: #000;
+    border-color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button i {
+    font-size: 0.9rem;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-form button:hover i {
+    transform: translateX(5px) translateY(-5px);
+}
+
+/* ==========================================================================
+   9. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 991px) {
+    .leader-nav, .header-socials { display: none; }
+    .hamburger { display: flex; }
+    #menu-toggle:checked + .leader-inner .hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    #menu-toggle:checked + .leader-inner .hamburger span:nth-child(2) { opacity: 0; }
+    #menu-toggle:checked + .leader-inner .hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    #menu-toggle:checked ~ .mobile-menu { right: 0; }
+}
+
+@media (max-width: 768px) {
+    .intro-profile { flex-direction: column; align-items: center; text-align: center; }
+    .intro-avatar { width: 110px; height: 110px; border-radius: 50%; }
+}
+
+@media (max-width: 576px) {
+    .about-actions-new { flex-direction: column; }
+    .btn-minimal, .contact-form button { width: 100%; }
+}
+
+/* --- SEZIONE CONTATTO (FOCUS QUI) --- */
+.contact {
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-inner {
+    width: 100%;
+    /* Larghezza aumentata per non farlo sembrare stretto */
+    max-width: 700px; 
+}
+
+/* QUESTO RISOLVE IL TUO PROBLEMA DI DISTANZA */
+.contact-header {
+    text-align: center;
+    /* Distanza tra titolo/sottotitolo e l'inizio del form */
+    margin-bottom: 80px !important; 
+}
+
+.contact-header h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+/* STILI DEL FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 30px; /* Spazio tra i campi del form */
+}
+
+.contact-form label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 18px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 14px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+/* BOTTONE */
+.submit-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-transform: uppercase;
+    transition: transform 0.2s, background 0.3s;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* ANIMAZIONI */
+.animate { opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }
+.animate.is-visible { opacity: 1; transform: translateY(0); }
+
+/* --- CONTACT SECTION (DISTANZE E LARGHEZZA) --- */
+.contact { padding: 80px 20px; display: flex; justify-content: center; }
+.contact-inner { width: 100%; max-width: 700px; }
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 70px !important;
+}
+
+.contact-header h2 { font-size: 2rem; font-weight: 700; margin-bottom: 10px; }
+
+.form-group { margin-bottom: 25px; width: 100%; }
+
+.contact-form label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+    width: 100%;
+    padding: 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (min-width: 768px) {
+    .contact-header { margin-bottom: 90px !important; }
+    .contact-header h2 { font-size: 3rem; }
+}
+
+/* --- ANIMAZIONI --- */
+.animate { opacity: 0; transform: translateY(30px); transition: all 0.6s ease-out; }
+.animate.is-visible { opacity: 1; transform: translateY(0); }
+
