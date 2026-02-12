@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imma Carano Portfolio – UXUI Designer</title>
-  <meta name="description" content="Portfolio di Imma Carano, Junior UXUI Designer specializzata in interfacce web responsive, HTML e CSS.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -13,7 +12,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function() {
-        emailjs.init("6L5hLDMadD0fwSwTZ"); // La tua Public Key verificata
+        emailjs.init("6L5hLDMadD0fwSwTZ"); 
     })();
   </script>
 </head>
@@ -23,7 +22,7 @@
     <input type="checkbox" id="menu-toggle" hidden>
     <div class="leader-inner container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/img/favicon.png" alt="Logo Imma Carano" width="35" height="35" class="d-inline-block align-top me-2">
+        <img src="assets/img/favicon.png" alt="Logo Imma Carano" width="35" height="35" class="me-2">
         <span class="fw-bold">Imma Carano</span>
       </a>
       <label for="menu-toggle" class="hamburger">
@@ -40,10 +39,7 @@
 
   <section class="hero">
     <div class="container">
-      <h1 class="hero-title animate">
-        Idee <span style="color: var(--primary);">che si incastrano.</span><br> 
-        Sistemi che funzionano.
-      </h1>
+      <h1 class="hero-title animate">Idee <span style="color: var(--primary);">che si incastrano.</span><br>Sistemi che funzionano.</h1>
     </div>
   </section>
     
@@ -53,15 +49,10 @@
       <div class="about-content">
         <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
         <div class="about-text">
-          <p>
-            Sono una collezionista di puzzle con meccanismo... 
+          <p>Sono una collezionista di puzzle con meccanismo... 
             <input type="checkbox" id="about-toggle" hidden>
-            <span class="more-text">
-              Sono una persona estremamente risolutiva... (il tuo testo completo)
-            </span>
-            <label for="about-toggle" class="btn-link-toggle">
-              <span class="more">... Leggi di più</span>
-            </label>
+            <span class="more-text">Sono una persona estremamente risolutiva... (testo completo)</span>
+            <label for="about-toggle" class="btn-link-toggle"><span class="more">... Leggi di più</span></label>
           </p>
         </div>
         <div class="about-actions-new">
@@ -78,25 +69,63 @@
         <div class="col-12 col-md-6 animate">
           <article class="project-card">
             <div class="project-image">
-              <div class="photo-overlay">
-                <span class="badge pink">Web</span>
-                <span class="badge blue">Frontend</span>
-              </div>
+              <div class="photo-overlay"><span class="badge pink">Web</span><span class="badge blue">Frontend</span></div>
               <img src="assets/img/UXUI DESIGN.png" alt="Progetto 1">
             </div>
             <div class="project-content">
               <h3>UX Portfolio e Personal Branding</h3>
-              <p>Sviluppo del mio portfolio curando architettura, accessibilità e codice.</p>
-              <div class="checklist">
-                <span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span>
-              </div>
-              <div class="card-action">
-                <a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza il Processo</a>
-              </div>
+              <p>Sviluppo del mio portfolio curando architettura e accessibilità.</p>
+              <div class="checklist"><span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span></div>
+              <div class="card-action"><a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza il Processo</a></div>
             </div>
           </article>
         </div>
+
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay"><span class="badge pink">UX Research</span><span class="badge blue">Strategy</span></div>
+              <img src="assets/img/discovery.png" alt="Progetto 2">
+            </div>
+            <div class="project-content">
+              <h3>UX Discovery e Strategia</h3>
+              <p>Ricerca e analisi dei bisogni utente per una scuola online.</p>
+              <div class="checklist"><span>✓ User Interview</span> <span>✓ Customer Journey</span></div>
+              <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza la ricerca</a></div>
+            </div>
+          </article>
         </div>
+
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay"><span class="badge pink">Accessibility</span><span class="badge blue">UI Optimization</span></div>
+              <img src="assets/img/accessibility.png" alt="Progetto 3">
+            </div>
+            <div class="project-content">
+              <h3>Accessibilità e Design inclusivo</h3>
+              <p>Valutazione e ottimizzazione secondo standard WCAG.</p>
+              <div class="checklist"><span>✓ Contrast Audit</span> <span>✓ Assistive Tech</span></div>
+              <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora l'accessibilità</a></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay"><span class="badge pink">Brand Identity</span><span class="badge blue">Adobe CC</span></div>
+              <img src="assets/img/GRAFICO.png" alt="Progetto 4">
+            </div>
+            <div class="project-content">
+              <h3>Brand Identity Design</h3>
+              <p>Creazione del logo e dell'identità visiva completa.</p>
+              <div class="checklist"><span>✓ Logo</span> <span>✓ Guidelines</span> <span>✓ Mockup</span></div>
+              <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri la logica</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -104,40 +133,24 @@
     <div class="contact-inner animate">
       <div class="contact-header">
         <h2>Lavoriamo insieme</h2>
-        <p>Raccontami la tua sfida...</p>
         <p id="form-status" style="font-weight: bold; margin-top: 10px;"></p>
       </div>
-
       <form class="contact-form" id="contact-form">
-        <div class="form-group">
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" required placeholder="Inserisci il tuo nome">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="la-tua@email.com">
-        </div>
-        <div class="form-group">
-          <label for="message">Messaggio</label>
-          <textarea id="message" name="message" rows="4" required placeholder="Di cosa hai bisogno?"></textarea>
-        </div>
-        <button type="submit" class="submit-btn" id="submit-btn">
-          Invia Messaggio <i class="fas fa-paper-plane"></i>
-        </button>
+        <div class="form-group"><label>Nome</label><input type="text" name="name" required placeholder="Inserisci il tuo nome"></div>
+        <div class="form-group"><label>Email</label><input type="email" name="email" required placeholder="la-tua@email.com"></div>
+        <div class="form-group"><label>Messaggio</label><textarea name="message" rows="4" required placeholder="Di cosa hai bisogno?"></textarea></div>
+        <button type="submit" class="submit-btn" id="submit-btn">Invia Messaggio <i class="fas fa-paper-plane"></i></button>
       </form>
     </div>
   </section>
 
   <script>
-    // LOGICA INVIO (Senza toccare nulla del design)
     const btn = document.getElementById('submit-btn');
     const status = document.getElementById('form-status');
-
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
       btn.innerHTML = 'Invio in corso...';
       btn.disabled = true;
-
       emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
         .then(() => {
           status.style.color = "#34c759";
@@ -152,8 +165,6 @@
           btn.disabled = false;
         });
     });
-
-    // Intersection Observer per le tue animazioni
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('is-visible'); });
     }, { threshold: 0.1 });
