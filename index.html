@@ -7,8 +7,7 @@
 
   <meta property="og:title" content="Imma Carano | UXUI Designer Portfolio">
   <meta property="og:description" content="Collezionista di puzzle con meccanismo: trasformo problemi complessi in sistemi funzionali e accessibili.">
-  <meta property="og:image" content="https://tuosito.it/assets/img/og-preview.png"> 
-  <meta property="og:url" content="https://tuosito.it">
+  <meta property="og:image" content="https://tuosito.it/assets/img/og-preview.png"> <meta property="og:url" content="https://tuosito.it">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -27,18 +26,15 @@
 <body>
 
   <header class="leader">
+    <input type="checkbox" id="menu-toggle" hidden>
     <div class="leader-inner container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="assets/img/favicon.png" alt="Logo" width="35" height="35" class="me-2">
         <span class="fw-bold">Imma Carano</span>
       </a>
-
-      <input type="checkbox" id="menu-toggle" hidden>
-      
       <label for="menu-toggle" class="hamburger">
         <span></span><span></span><span></span>
       </label>
-
       <nav class="leader-nav">
         <a href="#about">Chi sono</a>
         <a href="#projects">Progetti</a>
@@ -48,15 +44,15 @@
     </div>
   </header>
 
-  <section class="hero py-5 text-center">
+  <section class="hero">
     <div class="container">
-      <h1 class="hero-title animate">Idee <span style="color: var(--primary, #007aff);">che si incastrano.</span><br>Sistemi che funzionano.</h1>
+      <h1 class="hero-title animate">Idee <span style="color: var(--primary);">che si incastrano.</span><br>Sistemi che funzionano.</h1>
     </div>
   </section>
     
-  <section id="about" class="intro container animate py-5">
-    <div class="intro-profile d-md-flex align-items-center gap-5">
-      <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar rounded-circle mb-4 mb-md-0" style="width: 200px; height: 200px; object-fit: cover;">
+  <section id="about" class="intro container animate">
+    <div class="intro-profile">
+      <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar">
       <div class="about-content">
         <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
         <div class="about-text">
@@ -66,51 +62,79 @@
             <span class="more-text">
               Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli e una naturale propensione per l'ottimizzazione dei processi. Come UX Designer cerco sempre il punto d'incontro tra le necessità dell'utente e gli obiettivi di business, con un occhio di riguardo per l'accessibilità e il design inclusivo.
             </span>
-            <label for="about-toggle" class="btn-link-toggle" style="color: #007aff; cursor: pointer;">
-              <span class="more">... Leggi di più</span>
-            </label>
+            <label for="about-toggle" class="btn-link-toggle"><span class="more">... Leggi di più</span></label>
           </p>
         </div>
-        <div class="about-actions-new mt-4">
-          <a href="cv.html" class="btn btn-outline-dark rounded-pill px-4">Il mio curriculum</a>
-          <a href="#projects" class="btn btn-primary rounded-pill px-4">Analisi e progetti</a>
+        <div class="about-actions-new">
+          <a href="cv.html" class="btn-minimal btn-dark-outline">Il mio curriculum</a>
+          <a href="#projects" class="btn-minimal btn-primary-filled">Analisi e progetti</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="projects py-5 bg-light">
+  <section id="projects" class="projects">
     <div class="container">
       <div class="row g-5 justify-content-center">
         <div class="col-12 col-md-6 animate">
-          <article class="project-card bg-white rounded-4 overflow-hidden shadow-sm">
-            <div class="project-image position-relative">
-              <div class="photo-overlay position-absolute p-3 d-flex gap-2">
-                <span class="badge rounded-pill bg-danger">Web</span>
-                <span class="badge rounded-pill bg-primary">Frontend</span>
-              </div>
-              <img src="assets/img/UXUI DESIGN.png" alt="Progetto 1" class="w-100">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay"><span class="badge pink">Web</span><span class="badge blue">Frontend</span></div>
+              <img src="assets/img/UXUI DESIGN.png" alt="Progetto 1">
             </div>
-            <div class="project-content p-4">
+            <div class="project-content">
               <h3>UX Portfolio e Personal Branding</h3>
-              <div class="checklist my-3 d-flex gap-2 flex-wrap">
-                <span class="badge bg-secondary">✓ HTML</span> 
-                <span class="badge bg-secondary">✓ CSS</span> 
-                <span class="badge bg-secondary">✓ Responsive</span>
-              </div>
-              <div class="card-action text-end">
-                <a href="assets/pdf/progetto-1.pdf" class="btn btn-sm btn-dark" target="_blank">Analizza</a>
-              </div>
+              <div class="checklist"><span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span></div>
+              <div class="card-action"><a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza</a></div>
             </div>
           </article>
         </div>
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay"><span class="badge pink">UX Research</span><span class="badge blue">Strategy</span></div>
+              <img src="assets/img/discovery.png" alt="Progetto 2">
+            </div>
+            <div class="project-content">
+              <h3>UX Discovery e Strategia</h3>
+              <div class="checklist"><span>✓ User Interview</span> <span>✓ Journey</span></div>
+              <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
+            </div>
+          </article>
         </div>
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay"><span class="badge pink">Accessibility</span><span class="badge blue">UI Optimization</span></div>
+              <img src="assets/img/accessibility.png" alt="Progetto 3">
+            </div>
+            <div class="project-content">
+              <h3>Accessibilità e Design inclusivo</h3>
+              <div class="checklist"><span>✓ Contrast Audit</span> <span>✓ WCAG</span></div>
+              <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay"><span class="badge pink">Brand Identity</span><span class="badge blue">Adobe CC</span></div>
+              <img src="assets/img/GRAFICO.png" alt="Progetto 4">
+            </div>
+            <div class="project-content">
+              <h3>Brand Identity Design</h3>
+              <div class="checklist"><span>✓ Logo</span> <span>✓ Guidelines</span></div>
+              <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="contact py-5 container">
-    <div class="contact-inner animate p-5 bg-white rounded-4 shadow-sm">
-      <div class="contact-header mb-4"><h2>Lavoriamo insieme</h2><p id="form-status"></p></div>
+  <section id="contact" class="contact">
+    <div class="contact-inner animate">
+      <div class="contact-header"><h2>Lavoriamo insieme</h2><p id="form-status"></p></div>
       <form class="contact-form" id="contact-form">
         <div class="form-group mb-3">
           <label for="subject" class="form-label fw-bold">Come posso aiutarti?</label>
@@ -134,17 +158,17 @@
           <label class="fw-bold">Messaggio</label>
           <textarea name="message" class="form-control" rows="4" required placeholder="Il tuo messaggio"></textarea>
         </div>
-        <button type="submit" id="submit-btn" class="btn btn-primary w-100 py-3 rounded-pill fw-bold">Invia Messaggio</button>
+        <button type="submit" id="submit-btn" class="submit-btn w-100">Invia Messaggio</button>
       </form>
     </div>
   </section>
 
-  <footer class="footer border-top mt-5">
-    <div class="container text-center py-5">
-      <p class="text-muted">© 2026 Imma Carano | Junior UXUI Designer</p>
+  <footer class="footer">
+    <div class="container text-center py-4">
+      <p>© 2026 Imma Carano | Junior UXUI Designer</p>
       <div class="social-links d-flex justify-content-center gap-4">
-        <a href="https://github.com/tuo-username" target="_blank" class="text-dark fs-2"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank" class="text-dark fs-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/tuo-username" target="_blank" class="text-dark"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank" class="text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
       </div>
     </div>
   </footer>
