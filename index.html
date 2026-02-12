@@ -25,23 +25,41 @@
 </head>
 <body>
 
-  <header class="leader">
+ <header class="leader">
     <input type="checkbox" id="menu-toggle" hidden>
     <div class="leader-inner container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/img/favicon.png" alt="Logo" width="35" height="35" class="me-2">
+        <img src="assets/img/favicon.png" alt="Logo Imma Carano" width="35" height="35" class="d-inline-block align-top me-2">
         <span class="fw-bold">Imma Carano</span>
       </a>
       <label for="menu-toggle" class="hamburger">
         <span></span><span></span><span></span>
       </label>
+
       <nav class="leader-nav">
         <a href="#about">Chi sono</a>
         <a href="#projects">Progetti</a>
         <a href="cv.html" class="btn-cv-header">Curriculum</a>
         <a href="#contact" class="btn-contact-header">Lavoriamo insieme</a>
+        <div class="header-socials">
+            <a href="https://github.com/immacarano-uxui" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
       </nav>
     </div>
+
+    <nav class="mobile-menu">
+      <a href="#about">Chi sono</a>
+      <a href="#projects">Progetti</a>
+      <a href="cv.html">Esperienze</a>
+      <a href="#contact">Lavoriamo insieme</a>
+      <hr>
+      <div class="mobile-socials">
+          <a href="https://github.com/immacarano-uxui"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/imma-carano-0ab933168/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </nav>
+    <label for="menu-toggle" class="menu-overlay"></label>
   </header>
 
   <section class="hero">
