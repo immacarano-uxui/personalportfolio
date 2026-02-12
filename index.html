@@ -6,15 +6,14 @@
   <title>Imma Carano Portfolio – UXUI Designer</title>
 
   <meta property="og:title" content="Imma Carano | UXUI Designer Portfolio">
-  <meta property="og:description" content="Collezionista di puzzle con meccanismo: trasformo problemi complessi in sistemi funzionali e accessibili.">
-  <meta property="og:image" content="https://tuosito.it/assets/img/og-preview.png"> <meta property="og:url" content="https://tuosito.it">
+  <meta property="og:description" content="Collezionista di puzzle con meccanismo: trasformo problemi complessi in sistemi funzionali.">
+  <meta property="og:image" content="assets/img/og-preview.png">
   <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
@@ -44,151 +43,146 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section class="hero text-center py-5">
     <div class="container">
-      <h1 class="hero-title animate">Idee <span style="color: var(--primary);">che si incastrano.</span><br>Sistemi che funzionano.</h1>
+      <h1 class="hero-title animate">
+        Idee <span style="color: var(--primary);">che si incastrano.</span><br>
+        Sistemi che funzionano.
+      </h1>
     </div>
   </section>
     
   <section id="about" class="intro container animate">
-    <div class="intro-profile">
-      <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar">
-      <div class="about-content">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar img-fluid rounded-circle" style="width: 250px;">
+      </div>
+      <div class="col-md-8">
         <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
         <div class="about-text">
           <p>
-            Sono una collezionista di puzzle con meccanismo: amo studiare come i pezzi si incastrano per dare vita a un sistema perfetto. Risolvo i problemi identificando il pezzo mancante.
+            Sono una collezionista di puzzle con meccanismo: amo studiare come i pezzi si incastrano per dare vita a un sistema perfetto.
             <input type="checkbox" id="about-toggle" hidden>
             <span class="more-text">
-              Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli e una naturale propensione per l'ottimizzazione dei processi. Come UX Designer cerco sempre il punto d'incontro tra le necessità dell'utente e gli obiettivi di business, con un occhio di riguardo per l'accessibilità e il design inclusivo.
+              Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli e una propensione per l'ottimizzazione dei processi. Come UX Designer cerco sempre il punto d'incontro tra necessità utente e obiettivi di business.
             </span>
             <label for="about-toggle" class="btn-link-toggle"><span class="more">... Leggi di più</span></label>
           </p>
         </div>
-        <div class="about-actions-new">
-          <a href="cv.html" class="btn-minimal btn-dark-outline">Il mio curriculum</a>
+        <div class="mt-4">
+          <a href="cv.html" class="btn-minimal btn-dark-outline me-2">Il mio curriculum</a>
           <a href="#projects" class="btn-minimal btn-primary-filled">Analisi e progetti</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="projects">
-    <div class="container">
-      <div class="row g-5 justify-content-center">
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay"><span class="badge pink">Web</span><span class="badge blue">Frontend</span></div>
-              <img src="assets/img/UXUI DESIGN.png" alt="Progetto 1">
-            </div>
-            <div class="project-content">
-              <h3>UX Portfolio e Personal Branding</h3>
-              <div class="checklist"><span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span></div>
-              <div class="card-action"><a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza</a></div>
-            </div>
-          </article>
+  <section id="projects" class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-6 animate">
+        <div class="project-card">
+          <div class="photo-overlay"><span class="badge pink">Web</span><span class="badge blue">Frontend</span></div>
+          <img src="assets/img/UXUI DESIGN.png" class="img-fluid" alt="P1">
+          <div class="p-4">
+            <h3>UX Portfolio</h3>
+            <div class="checklist"><span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span></div>
+            <a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza</a>
+          </div>
         </div>
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay"><span class="badge pink">UX Research</span><span class="badge blue">Strategy</span></div>
-              <img src="assets/img/discovery.png" alt="Progetto 2">
-            </div>
-            <div class="project-content">
-              <h3>UX Discovery e Strategia</h3>
-              <div class="checklist"><span>✓ User Interview</span> <span>✓ Journey</span></div>
-              <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
-            </div>
-          </article>
+      </div>
+      <div class="col-md-6 animate">
+        <div class="project-card">
+          <div class="photo-overlay"><span class="badge pink">UX Research</span><span class="badge blue">Strategy</span></div>
+          <img src="assets/img/discovery.png" class="img-fluid" alt="P2">
+          <div class="p-4">
+            <h3>UX Discovery</h3>
+            <div class="checklist"><span>✓ Interview</span> <span>✓ Journey</span></div>
+            <a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza</a>
+          </div>
         </div>
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay"><span class="badge pink">Accessibility</span><span class="badge blue">UI Optimization</span></div>
-              <img src="assets/img/accessibility.png" alt="Progetto 3">
-            </div>
-            <div class="project-content">
-              <h3>Accessibilità e Design inclusivo</h3>
-              <div class="checklist"><span>✓ Contrast Audit</span> <span>✓ WCAG</span></div>
-              <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora</a></div>
-            </div>
-          </article>
+      </div>
+      <div class="col-md-6 animate">
+        <div class="project-card">
+          <div class="photo-overlay"><span class="badge pink">Accessibility</span><span class="badge blue">UI</span></div>
+          <img src="assets/img/accessibility.png" class="img-fluid" alt="P3">
+          <div class="p-4">
+            <h3>Accessibilità</h3>
+            <div class="checklist"><span>✓ WCAG</span> <span>✓ Contrast</span></div>
+            <a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora</a>
+          </div>
         </div>
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay"><span class="badge pink">Brand Identity</span><span class="badge blue">Adobe CC</span></div>
-              <img src="assets/img/GRAFICO.png" alt="Progetto 4">
-            </div>
-            <div class="project-content">
-              <h3>Brand Identity Design</h3>
-              <div class="checklist"><span>✓ Logo</span> <span>✓ Guidelines</span></div>
-              <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri</a></div>
-            </div>
-          </article>
+      </div>
+      <div class="col-md-6 animate">
+        <div class="project-card">
+          <div class="photo-overlay"><span class="badge pink">Brand</span><span class="badge blue">Adobe CC</span></div>
+          <img src="assets/img/GRAFICO.png" class="img-fluid" alt="P4">
+          <div class="p-4">
+            <h3>Brand Identity</h3>
+            <div class="checklist"><span>✓ Logo</span> <span>✓ Mockup</span></div>
+            <a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="contact-inner animate">
-      <div class="contact-header"><h2>Lavoriamo insieme</h2><p id="form-status"></p></div>
-      <form class="contact-form" id="contact-form">
-        <div class="form-group mb-3">
-          <label for="subject" class="form-label fw-bold">Come posso aiutarti?</label>
-          <select id="subject" name="subject" class="form-select" required>
-            <option value="" disabled selected>Seleziona un'opzione...</option>
-            <option value="Brand Identity">Voglio creare o rinnovare il mio brand</option>
-            <option value="UX Research">Ho bisogno di capire meglio i miei utenti</option>
-            <option value="Accessibilità">Il mio sito non è accessibile a tutti</option>
-            <option value="Altro">Altro</option>
+  <section id="contact" class="container py-5">
+    <div class="contact-inner p-5 bg-white rounded-4 shadow-sm">
+      <h2 class="mb-4">Lavoriamo insieme</h2>
+      <p id="form-status"></p>
+      <form id="contact-form">
+        <div class="mb-3">
+          <label class="form-label fw-bold">Come posso aiutarti?</label>
+          <select name="subject" class="form-select" required>
+            <option value="" disabled selected>Seleziona...</option>
+            <option value="Brand">Rinnovo Brand</option>
+            <option value="UX">Ricerca UX</option>
+            <option value="Accessibilità">Accessibilità</option>
           </select>
         </div>
-        <div class="form-group mb-3">
-          <label class="fw-bold">Nome</label>
-          <input type="text" name="name" class="form-control" required placeholder="Nome">
+        <div class="mb-3">
+          <label class="form-label fw-bold">Nome</label>
+          <input type="text" name="name" class="form-control" required>
         </div>
-        <div class="form-group mb-3">
-          <label class="fw-bold">Email</label>
-          <input type="email" name="email" class="form-control" required placeholder="la-tua@email.com">
+        <div class="mb-3">
+          <label class="form-label fw-bold">Email</label>
+          <input type="email" name="email" class="form-control" required>
         </div>
-        <div class="form-group mb-3">
-          <label class="fw-bold">Messaggio</label>
-          <textarea name="message" class="form-control" rows="4" required placeholder="Il tuo messaggio"></textarea>
+        <div class="mb-3">
+          <label class="form-label fw-bold">Messaggio</label>
+          <textarea name="message" class="form-control" rows="4" required></textarea>
         </div>
         <button type="submit" id="submit-btn" class="submit-btn w-100">Invia Messaggio</button>
       </form>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="container text-center py-4">
-      <p>© 2026 Imma Carano | Junior UXUI Designer</p>
-      <div class="social-links d-flex justify-content-center gap-4">
-        <a href="https://github.com/tuo-username" target="_blank" class="text-dark"><i class="fab fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank" class="text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+  <footer class="py-5 border-top mt-5">
+    <div class="container text-center">
+      <p>© 2026 Imma Carano | UXUI Designer</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://github.com/tuo-username" target="_blank" class="text-dark fs-3"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank" class="text-dark fs-3"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </footer>
 
   <script>
     const btn = document.getElementById('submit-btn');
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      btn.innerHTML = 'Invio...';
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      btn.innerText = 'Invio...';
       emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
         .then(() => {
-          document.getElementById('form-status').style.color = "#34c759";
-          document.getElementById('form-status').textContent = "Inviato! 🎉";
+          document.getElementById('form-status').innerText = "Inviato con successo! 🎉";
           this.reset();
-          btn.innerHTML = 'Invia Messaggio';
-        }, (err) => {
-          document.getElementById('form-status').textContent = "Errore.";
-          btn.innerHTML = 'Invia Messaggio';
+          btn.innerText = 'Invia Messaggio';
+        }, () => {
+          document.getElementById('form-status').innerText = "Errore nell'invio.";
+          btn.innerText = 'Invia Messaggio';
         });
     });
+
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('is-visible'); });
     }, { threshold: 0.1 });
