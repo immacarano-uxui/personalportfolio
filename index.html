@@ -4,299 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imma Carano Portfolio – UXUI Designer</title>
-  <meta name="description" content="Portfolio di Imma Carano, Junior UXUI Designer specializzata in interfacce web responsive, HTML e CSS.">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="https://immacarano.github.io/personalportfolio/">
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://immacarano.github.io/personalportfolio/">
-<meta property="og:title" content="Imma Carano | Junior UXUI Designer">
-<meta property="og:description" content="Ogni progetto è un puzzle di bisogni e obiettivi. Scopri come incastro i pezzi per trasformare idee complesse in esperienze digitali chiare e funzionali.">
-<meta property="og:image" content="https://immacarano.github.io/personalportfolio/assets/img/og-image.png">
-<meta property="og:site_name" content="Portfolio Imma Carano">
-<meta property="og:locale" content="it_IT">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Imma Carano | Junior UXUI Designer">
-<meta name="twitter:description" content="Ogni progetto è un puzzle di bisogni https://immacarano.github.io/personalportfolio/assets/img/og-image.png">
-<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
-<link rel="apple-touch-icon" href="assets/img/favicon.png">
-<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+        // Inizializzazione con la tua chiave verificata
+        emailjs.init("6L5hLDMadD0fwSwTZ"); 
+    })();
+  </script>
 </head>
 <body>
 
   <header class="leader">
     <input type="checkbox" id="menu-toggle" hidden>
-
     <div class="leader-inner container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="assets/img/favicon.png" alt="Logo Imma Carano" width="35" height="35" class="d-inline-block align-top me-2">
-      <span class="fw-bold">Imma Carano</span>
-    </a>
+        <img src="assets/img/favicon.png" alt="Logo" width="35" height="35" class="me-2">
+        <span class="fw-bold">Imma Carano</span>
+      </a>
       <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </label>
 
       <nav class="leader-nav">
         <a href="#about">Chi sono</a>
         <a href="#projects">Progetti</a>
-        <a href="cv.html" class="btn-cv-header">Curriculum</a>
-        <a href="#contact" class="btn-contact-header">Lavoriamo insieme</a>
-        
-        <div class="header-socials">
-            <a href="https://immacarano.github.io/personalportfolio/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
+        <a href="cv.html">Curriculum</a>
+        <a href="#contact" class="btn-contact-header">Contatti</a>
       </nav>
     </div>
-
-    <nav class="mobile-menu">
-      <a href="#about">Chi sono</a>
-      <a href="#projects">Progetti</a>
-      <a href="cv.html">Esperienze</a>
-      <a href="#contact">Lavoriamo insieme</a>
-      <hr>
-      <div class="mobile-socials">
-          <a href="#"><i class="fab fa-github"></i> GitHub</a>
-          <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </div>
-    </nav>
-
-    <label for="menu-toggle" class="menu-overlay"></label>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h1 class="hero-title animate">
-        Idee <span style="color: var(--primary);">che si incastrano.</span><br> 
-        Sistemi che funzionano.
-      </h1>
+    <div class="container text-center">
+      <h1 class="hero-title animate">Idee che si incastrano. Sistemi che funzionano.</h1>
     </div>
   </section>
     
-  <section id="about" class="intro container animate">
-    <div class="intro-profile">
-      <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar">
-      
-      <div class="about-content">
-        <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
-        
-        <div class="about-text">
-          <p>
-            Sono una collezionista di puzzle con meccanismo: amo studiare come i pezzi si incastrano per dare vita a un sistema perfetto. 
-            Questa mia attitudine nel <strong>risolvere problemi</strong> e <strong>identificare i pezzi mancanti</strong> è diventata la base naturale della mia <strong>progettazione UX/UI</strong>.
-            
-            <input type="checkbox" id="about-toggle" hidden>
-            
-            <span class="more-text">
-              Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli e una naturale propensione per l'ottimizzazione dei processi. Come UX Designer, attualmente impegnata in un <strong>Master specialistico</strong>, vedo l’esperienza utente come un sistema complesso dove ogni elemento deve essere progettato con senso e funzionalità per contribuire a un risultato finale armonioso, minimale ed elegante.
-Il mio approccio è quello di una problem solver creativa e cerco sempre il punto d'incontro tra le necessità dell'utente e gli obiettivi di business.
-              Il mio obiettivo è contribuire a <strong>progetti innovativi</strong> traducendo idee complesse in <strong>esperienze digitali chiare</strong>, funzionali e di valore. 
-              Perché quando ogni "ingranaggio" gira nel modo giusto, <strong>l'utente finale sorride</strong>.
-            </span>
-
-            <label for="about-toggle" class="btn-link-toggle">
-              <span class="more">... Leggi di più</span>
-            </label>
-          </p>
-        </div>
-
-        <div class="about-actions-new">
-          <a href="cv.html" class="btn-minimal btn-dark-outline">Il mio curriculum</a>
-          <a href="#projects" class="btn-minimal btn-primary-filled">Analisi e progetti</a>
-        </div>
+  <section id="about" class="container animate py-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="assets/img/imma.jpg" alt="Imma Carano" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
+      </div>
+      <div class="col-md-8">
+        <h2>Ciao! Sono Imma, UXUI Designer</h2>
+        <p>Amo studiare come i pezzi si incastrano per dare vita a sistemi perfetti. Risolvo problemi identificando i pezzi mancanti.</p>
+        <a href="cv.html" class="btn btn-outline-dark">Il mio curriculum</a>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="projects">
+  <section id="projects" class="projects py-5 bg-light">
     <div class="container">
-      <div class="row g-5 justify-content-center">
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay">
-                <span class="badge pink">Web</span>
-                <span class="badge blue">Frontend</span>
-              </div>
-              <img src="assets/img/UXUI DESIGN.png" alt="Progetto 1">
+      <div class="row g-4">
+        <div class="col-md-6 animate">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/img/UXUI DESIGN.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h3>UX Portfolio</h3>
+              <p>Personal branding e sviluppo architettura.</p>
             </div>
-            <div class="project-content">
-              <h3>UX Portfolio e Personal Branding</h3>
-              <p>Sviluppo del mio portfolio curando architettura, accessibilità e codice.</p>
-              <div class="checklist">
-                <span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span>
-              </div>
-              <div class="card-action">
-                <a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza il Processo</a>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
-
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay">
-                <span class="badge pink">UX Research</span>
-                <span class="badge blue">Strategy</span>
-              </div>
-              <img src="assets/img/discovery.png" alt="Progetto 2">
+        <div class="col-md-6 animate">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/img/discovery.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h3>UX Discovery</h3>
+              <p>Ricerca utente per piattaforme e-learning.</p>
             </div>
-            <div class="project-content">
-              <h3>UX Discovery e Strategia</h3>
-              <p>Ricerca e analisi dei bisogni utente per una scuola online.</p>
-              <div class="checklist">
-                <span>✓ User Interview</span> <span>✓ Customer Journey</span>
-              </div>
-              <div class="card-action">
-                <a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza la ricerca</a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay">
-                <span class="badge pink">Accessibility</span>
-                <span class="badge blue">UI Optimization</span>
-              </div>
-              <img src="assets/img/accessibility.png" alt="Progetto 3">
-            </div>
-            <div class="project-content">
-              <h3>Accessibilità e Design inclusivo</h3>
-              <p>Valutazione e proposte di ottimizzazione secondo gli standard WCAG.</p>
-              <div class="checklist">
-                <span>✓ Contrast Audit</span> <span>✓ Assistive Tech</span>
-              </div>
-              <div class="card-action">
-                <a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora l'accessibilità</a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay">
-                <span class="badge pink">Brand Identity</span>
-                <span class="badge blue">Adobe CC</span>
-              </div>
-              <img src="assets/img/GRAFICO.png" alt="Progetto 4">
-            </div>
-            <div class="project-content">
-              <h3>Brand Identity Design</h3>
-              <p>Creazione del logo e dell'identità visiva per una piattaforma di divulgazione.</p>
-              <div class="checklist">
-                <span>✓ Logo</span> <span>✓ Guidelines</span> <span>✓ Mockup</span>
-              </div>
-              <div class="card-action">
-                <a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri la logica</a>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="contact-inner animate">
-      <div class="contact-header">
+  <section id="contact" class="py-5">
+    <div class="container" style="max-width: 600px;">
+      <div class="text-center mb-4">
         <h2>Lavoriamo insieme</h2>
-        <p>Mi occupo di ricerca, accessibilità e identità visiva. Raccontami la tua sfida e capiremo come affrontarla insieme.</p>
+        <p id="form-status"></p>
       </div>
 
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="subject">Come posso aiutarti?</label>
-          <select id="subject" name="subject" required>
-            <option value="" disabled selected>Seleziona un'opzione...</option>
-            <option value="progetto">Voglio creare o rinnovare il mio brand</option>
-            <option value="collaborazione">Ho bisogno di capire meglio i miei utenti</option>
-            <option value="consulenza">Il mio sito non è accessibile a tutti</option>
-            <option value="saluto">Altro</option>
-          </select>
+      <form class="contact-form" id="contact-form">
+        <div class="mb-3">
+          <label class="form-label">Nome</label>
+          <input type="text" name="name" class="form-control" required placeholder="Tuo Nome">
         </div>
-
-        <div class="form-group">
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" required placeholder="Inserisci il tuo nome">
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" name="email" class="form-control" required placeholder="tua@email.com">
         </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="la-tua@email.com">
+        <div class="mb-3">
+          <label class="form-label">Messaggio</label>
+          <textarea name="message" class="form-control" rows="4" required></textarea>
         </div>
-
-        <div class="form-group">
-          <label for="message">Messaggio</label>
-          <textarea id="message" name="message" rows="4" required placeholder="Di cosa hai bisogno?"></textarea>
-        </div>
-
-        <button type="submit" class="submit-btn">
-          Invia Messaggio <i class="fas fa-paper-plane"></i>
+        <button type="submit" id="submit-btn" class="btn btn-primary w-100 py-3 rounded-pill fw-bold">
+          Invia Messaggio
         </button>
       </form>
     </div>
   </section>
 
-  <footer class="footer">
-    <p class="footer-note">Pensato per le persone, costruito per durare.</p>
-    <p>© 2026 Imma Carano</p>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="https://immacarano.github.io/personalportfolio/" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
+  <footer class="text-center py-4 border-top">
+    <p>© 2026 Imma Carano | <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank">LinkedIn</a></p>
   </footer>
 
   <script>
-  const elements = document.querySelectorAll('.animate');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-      }
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      btn.innerHTML = 'Invio in corso... <i class="fas fa-spinner fa-spin"></i>';
+      btn.disabled = true;
+
+      // Utilizzo i tuoi ID Service e Template verificati
+      emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
+        .then(() => {
+          status.style.color = "#34c759";
+          status.textContent = "Messaggio inviato! 🎉";
+          this.reset();
+          btn.innerHTML = 'Invia Messaggio';
+          btn.disabled = false;
+        }, (err) => {
+          status.style.color = "#ff3b30";
+          status.textContent = "Errore nell'invio. Riprova.";
+          btn.innerHTML = 'Invia Messaggio';
+          btn.disabled = false;
+          console.error(err);
+        });
     });
-  }, { threshold: 0.1 });
-  elements.forEach(el => observer.observe(el));
 
-  (function() {
-      emailjs.init("6L5hLDMadD0fwSwTZ"); 
-  })();
+    // Animazioni Scroll
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('is-visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.animate').forEach(el => obs.observe(el));
+  </script>
 
-  const contactForm = document.querySelector('.contact-form');
-  if (contactForm) {
-      contactForm.addEventListener('submit', function(event) {
-          event.preventDefault();
-
-          const submitBtn = this.querySelector('.submit-btn');
-          const originalText = submitBtn.innerHTML;
-          
-          submitBtn.innerHTML = 'Invio in corso... <i class="fas fa-spinner fa-spin"></i>';
-          submitBtn.disabled = true;
-
-          emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
-              .then(function() {
-                  alert('Messaggio inviato! Ti risponderò al più presto.');
-                  contactForm.reset();
-                  submitBtn.innerHTML = originalText;
-                  submitBtn.disabled = false;
-              }, function(error) {
-                  alert('Ops! Errore nell\'invio. Riprova più tardi.');
-                  console.log('FAILED...', error);
-                  submitBtn.innerHTML = originalText;
-                  submitBtn.disabled = false;
-              });
-      });
-  }
-</script>
 </body>
 </html>
