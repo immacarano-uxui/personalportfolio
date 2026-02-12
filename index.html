@@ -12,7 +12,6 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function() {
-        // Inizializzazione con la tua chiave verificata
         emailjs.init("6L5hLDMadD0fwSwTZ"); 
     })();
   </script>
@@ -29,115 +28,146 @@
       <label for="menu-toggle" class="hamburger">
         <span></span><span></span><span></span>
       </label>
-
       <nav class="leader-nav">
         <a href="#about">Chi sono</a>
         <a href="#projects">Progetti</a>
-        <a href="cv.html">Curriculum</a>
-        <a href="#contact" class="btn-contact-header">Contatti</a>
+        <a href="cv.html" class="btn-cv-header">Curriculum</a>
+        <a href="#contact" class="btn-contact-header">Lavoriamo insieme</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container text-center">
-      <h1 class="hero-title animate">Idee che si incastrano. Sistemi che funzionano.</h1>
+    <div class="container">
+      <h1 class="hero-title animate">
+        Idee <span style="color: var(--primary);">che si incastrano.</span><br> 
+        Sistemi che funzionano.
+      </h1>
     </div>
   </section>
     
-  <section id="about" class="container animate py-5">
-    <div class="row align-items-center">
-      <div class="col-md-4 text-center">
-        <img src="assets/img/imma.jpg" alt="Imma Carano" class="img-fluid rounded-circle shadow" style="max-width: 250px;">
-      </div>
-      <div class="col-md-8">
-        <h2>Ciao! Sono Imma, UXUI Designer</h2>
-        <p>Amo studiare come i pezzi si incastrano per dare vita a sistemi perfetti. Risolvo problemi identificando i pezzi mancanti.</p>
-        <a href="cv.html" class="btn btn-outline-dark">Il mio curriculum</a>
+  <section id="about" class="intro container animate">
+    <div class="intro-profile">
+      <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar">
+      <div class="about-content">
+        <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
+        <div class="about-text">
+          <p>
+            Sono una collezionista di puzzle con meccanismo: amo studiare come i pezzi si incastrano per dare vita a un sistema perfetto. 
+            <input type="checkbox" id="about-toggle" hidden>
+            <span class="more-text">
+              Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli. Come UX Designer cerco sempre il punto d'incontro tra le necessità dell'utente e gli obiettivi di business.
+            </span>
+            <label for="about-toggle" class="btn-link-toggle">
+              <span class="more">... Leggi di più</span>
+            </label>
+          </p>
+        </div>
+        <div class="about-actions-new">
+          <a href="cv.html" class="btn-minimal btn-dark-outline">Il mio curriculum</a>
+          <a href="#projects" class="btn-minimal btn-primary-filled">Analisi e progetti</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="projects py-5 bg-light">
+  <section id="projects" class="projects">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-md-6 animate">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/UXUI DESIGN.png" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-              <h3>UX Portfolio</h3>
-              <p>Personal branding e sviluppo architettura.</p>
+      <div class="row g-5 justify-content-center">
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay">
+                <span class="badge pink">Web</span>
+                <span class="badge blue">Frontend</span>
+              </div>
+              <img src="assets/img/UXUI DESIGN.png" alt="Progetto 1">
             </div>
-          </div>
+            <div class="project-content">
+              <h3>UX Portfolio e Personal Branding</h3>
+              <p>Sviluppo del mio portfolio curando architettura e accessibilità.</p>
+              <div class="card-action">
+                <a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza il Processo</a>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="col-md-6 animate">
-          <div class="card h-100 shadow-sm">
-            <img src="assets/img/discovery.png" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h3>UX Discovery</h3>
-              <p>Ricerca utente per piattaforme e-learning.</p>
+        <div class="col-12 col-md-6 animate">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="photo-overlay">
+                <span class="badge pink">UX Research</span>
+                <span class="badge blue">Strategy</span>
+              </div>
+              <img src="assets/img/discovery.png" alt="Progetto 2">
             </div>
-          </div>
+            <div class="project-content">
+              <h3>UX Discovery e Strategia</h3>
+              <p>Ricerca e analisi dei bisogni utente per una scuola online.</p>
+              <div class="card-action">
+                <a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza la ricerca</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="py-5">
-    <div class="container" style="max-width: 600px;">
-      <div class="text-center mb-4">
+  <section id="contact" class="contact">
+    <div class="contact-inner animate">
+      <div class="contact-header">
         <h2>Lavoriamo insieme</h2>
-        <p id="form-status"></p>
+        <p>Raccontami la tua sfida e capiremo come affrontarla insieme.</p>
+        <p id="form-status" style="font-weight: bold; margin-top: 10px;"></p>
       </div>
 
       <form class="contact-form" id="contact-form">
-        <div class="mb-3">
-          <label class="form-label">Nome</label>
-          <input type="text" name="name" class="form-control" required placeholder="Tuo Nome">
+        <div class="form-group">
+          <label>Nome</label>
+          <input type="text" name="name" required placeholder="Inserisci il tuo nome">
         </div>
-        <div class="mb-3">
-          <label class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" required placeholder="tua@email.com">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" required placeholder="la-tua@email.com">
         </div>
-        <div class="mb-3">
-          <label class="form-label">Messaggio</label>
-          <textarea name="message" class="form-control" rows="4" required></textarea>
+        <div class="form-group">
+          <label>Messaggio</label>
+          <textarea name="message" rows="4" required placeholder="Di cosa hai bisogno?"></textarea>
         </div>
-        <button type="submit" id="submit-btn" class="btn btn-primary w-100 py-3 rounded-pill fw-bold">
-          Invia Messaggio
+        <button type="submit" id="submit-btn" class="submit-btn">
+          Invia Messaggio <i class="fas fa-paper-plane"></i>
         </button>
       </form>
     </div>
   </section>
 
-  <footer class="text-center py-4 border-top">
+  <footer class="footer">
     <p>© 2026 Imma Carano | <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank">LinkedIn</a></p>
   </footer>
 
   <script>
+    // Gestione Invio EmailJS
     const btn = document.getElementById('submit-btn');
     const status = document.getElementById('form-status');
 
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-
       btn.innerHTML = 'Invio in corso... <i class="fas fa-spinner fa-spin"></i>';
       btn.disabled = true;
 
-      // Utilizzo i tuoi ID Service e Template verificati
       emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
         .then(() => {
           status.style.color = "#34c759";
           status.textContent = "Messaggio inviato! 🎉";
           this.reset();
-          btn.innerHTML = 'Invia Messaggio';
+          btn.innerHTML = 'Invia Messaggio <i class="fas fa-paper-plane"></i>';
           btn.disabled = false;
         }, (err) => {
           status.style.color = "#ff3b30";
           status.textContent = "Errore nell'invio. Riprova.";
-          btn.innerHTML = 'Invia Messaggio';
+          btn.innerHTML = 'Invia Messaggio <i class="fas fa-paper-plane"></i>';
           btn.disabled = false;
-          console.error(err);
         });
     });
 
@@ -147,6 +177,5 @@
     }, { threshold: 0.1 });
     document.querySelectorAll('.animate').forEach(el => obs.observe(el));
   </script>
-
 </body>
 </html>
