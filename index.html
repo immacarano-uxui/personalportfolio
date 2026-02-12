@@ -7,8 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
-
+  
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function() {
@@ -37,31 +36,15 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title animate">
-        Idee <span style="color: var(--primary);">che si incastrano.</span><br> 
-        Sistemi che funzionano.
-      </h1>
-    </div>
-  </section>
-    
+  <section class="hero"><div class="container"><h1 class="hero-title animate">Idee <span style="color: var(--primary);">che si incastrano.</span><br>Sistemi che funzionano.</h1></div></section>
+  
   <section id="about" class="intro container animate">
     <div class="intro-profile">
       <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar">
       <div class="about-content">
         <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
         <div class="about-text">
-          <p>
-            Sono una collezionista di puzzle con meccanismo: amo studiare come i pezzi si incastrano per dare vita a un sistema perfetto. 
-            <input type="checkbox" id="about-toggle" hidden>
-            <span class="more-text">
-              Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli e una naturale propensione per l'ottimizzazione dei processi.
-            </span>
-            <label for="about-toggle" class="btn-link-toggle">
-              <span class="more">... Leggi di più</span>
-            </label>
-          </p>
+          <p>Sono una collezionista di puzzle... <input type="checkbox" id="about-toggle" hidden> <span class="more-text">Sono una persona risolutiva...</span> <label for="about-toggle" class="btn-link-toggle"><span class="more">... Leggi di più</span></label></p>
         </div>
         <div class="about-actions-new">
           <a href="cv.html" class="btn-minimal btn-dark-outline">Il mio curriculum</a>
@@ -82,13 +65,11 @@
             </div>
             <div class="project-content">
               <h3>UX Portfolio e Personal Branding</h3>
-              <p>Sviluppo del mio portfolio curando architettura, accessibilità e codice.</p>
               <div class="checklist"><span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span></div>
-              <div class="card-action"><a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza il Processo</a></div>
+              <div class="card-action"><a href="assets/pdf/progetto-1.pdf" class="btn-case-study" target="_blank">Analizza</a></div>
             </div>
           </article>
         </div>
-
         <div class="col-12 col-md-6 animate">
           <article class="project-card">
             <div class="project-image">
@@ -97,13 +78,11 @@
             </div>
             <div class="project-content">
               <h3>UX Discovery e Strategia</h3>
-              <p>Ricerca e analisi dei bisogni utente per una scuola online.</p>
-              <div class="checklist"><span>✓ User Interview</span> <span>✓ Customer Journey</span></div>
-              <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza la ricerca</a></div>
+              <div class="checklist"><span>✓ User Interview</span> <span>✓ Journey</span></div>
+              <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
             </div>
           </article>
         </div>
-
         <div class="col-12 col-md-6 animate">
           <article class="project-card">
             <div class="project-image">
@@ -112,13 +91,11 @@
             </div>
             <div class="project-content">
               <h3>Accessibilità e Design inclusivo</h3>
-              <p>Valutazione e proposte di ottimizzazione secondo gli standard WCAG.</p>
-              <div class="checklist"><span>✓ Contrast Audit</span> <span>✓ Assistive Tech</span></div>
-              <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora l'accessibilità</a></div>
+              <div class="checklist"><span>✓ Contrast Audit</span> <span>✓ WCAG</span></div>
+              <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora</a></div>
             </div>
           </article>
         </div>
-
         <div class="col-12 col-md-6 animate">
           <article class="project-card">
             <div class="project-image">
@@ -127,9 +104,8 @@
             </div>
             <div class="project-content">
               <h3>Brand Identity Design</h3>
-              <p>Creazione del logo e dell'identità visiva per una piattaforma di divulgazione.</p>
-              <div class="checklist"><span>✓ Logo</span> <span>✓ Guidelines</span> <span>✓ Mockup</span></div>
-              <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri la logica</a></div>
+              <div class="checklist"><span>✓ Logo</span> <span>✓ Guidelines</span></div>
+              <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri</a></div>
             </div>
           </article>
         </div>
@@ -141,33 +117,33 @@
     <div class="contact-inner animate">
       <div class="contact-header">
         <h2>Lavoriamo insieme</h2>
-        <p id="form-status" style="font-weight: bold; margin-top: 10px;"></p>
+        <p id="form-status"></p>
       </div>
 
       <form class="contact-form" id="contact-form">
-        <div class="form-group">
-          <label for="subject">Come posso aiutarti?</label>
-          <select id="subject" name="subject" required>
+        <div class="form-group mb-3">
+          <label for="subject" class="form-label fw-bold">Come posso aiutarti?</label>
+          <select id="subject" name="subject" class="form-select" required>
             <option value="" disabled selected>Seleziona un'opzione...</option>
-            <option value="progetto">Voglio creare o rinnovare il mio brand</option>
-            <option value="collaborazione">Ho bisogno di capire meglio i miei utenti</option>
-            <option value="consulenza">Il mio sito non è accessibile a tutti</option>
-            <option value="saluto">Altro</option>
+            <option value="brand">Voglio creare o rinnovare il mio brand</option>
+            <option value="ux">Ho bisogno di capire meglio i miei utenti</option>
+            <option value="access">Il mio sito non è accessibile a tutti</option>
+            <option value="altro">Altro</option>
           </select>
         </div>
-        <div class="form-group">
-          <label>Nome</label>
-          <input type="text" name="name" required placeholder="Inserisci il tuo nome">
+        <div class="form-group mb-3">
+          <label class="fw-bold">Nome</label>
+          <input type="text" name="name" class="form-control" required placeholder="Inserisci il tuo nome">
         </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" name="email" required placeholder="la-tua@email.com">
+        <div class="form-group mb-3">
+          <label class="fw-bold">Email</label>
+          <input type="email" name="email" class="form-control" required placeholder="la-tua@email.com">
         </div>
-        <div class="form-group">
-          <label>Messaggio</label>
-          <textarea name="message" rows="4" required placeholder="Di cosa hai bisogno?"></textarea>
+        <div class="form-group mb-3">
+          <label class="fw-bold">Messaggio</label>
+          <textarea name="message" class="form-control" rows="4" required placeholder="Di cosa hai bisogno?"></textarea>
         </div>
-        <button type="submit" id="submit-btn" class="submit-btn">
+        <button type="submit" id="submit-btn" class="submit-btn w-100">
           Invia Messaggio <i class="fas fa-paper-plane"></i>
         </button>
       </form>
@@ -180,19 +156,19 @@
 
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      btn.innerHTML = 'Invio in corso...';
+      btn.innerHTML = 'Invio...';
       btn.disabled = true;
 
       emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
         .then(() => {
           status.style.color = "#34c759";
-          status.textContent = "Messaggio inviato! 🎉";
+          status.textContent = "Inviato! 🎉";
           this.reset();
           btn.innerHTML = 'Invia Messaggio <i class="fas fa-paper-plane"></i>';
           btn.disabled = false;
         }, (err) => {
           status.style.color = "#ff3b30";
-          status.textContent = "Errore nell'invio.";
+          status.textContent = "Errore invio.";
           btn.innerHTML = 'Invia Messaggio';
           btn.disabled = false;
         });
