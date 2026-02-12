@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Imma Carano Portfolio – UXUI Designer</title>
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon.png">
+
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
     (function() {
-        emailjs.init("6L5hLDMadD0fwSwTZ"); 
+        emailjs.init("6L5hLDMadD0fwSwTZ"); // Tua Public Key
     })();
   </script>
 </head>
@@ -24,9 +26,11 @@
         <img src="assets/img/favicon.png" alt="Logo" width="35" height="35" class="me-2">
         <span class="fw-bold">Imma Carano</span>
       </a>
+      
       <label for="menu-toggle" class="hamburger">
         <span></span><span></span><span></span>
       </label>
+
       <nav class="leader-nav">
         <a href="#about">Chi sono</a>
         <a href="#projects">Progetti</a>
@@ -36,15 +40,31 @@
     </div>
   </header>
 
-  <section class="hero"><div class="container"><h1 class="hero-title animate">Idee <span style="color: var(--primary);">che si incastrano.</span><br>Sistemi che funzionano.</h1></div></section>
-  
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title animate">
+        Idee <span style="color: var(--primary);">che si incastrano.</span><br> 
+        Sistemi che funzionano.
+      </h1>
+    </div>
+  </section>
+    
   <section id="about" class="intro container animate">
     <div class="intro-profile">
       <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar">
       <div class="about-content">
         <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
         <div class="about-text">
-          <p>Sono una collezionista di puzzle con meccanismo: amo studiare come i pezzi si incastrano per dare vita a un sistema perfetto.<input type="checkbox" id="about-toggle" hidden> <span class="more-text">Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli e una naturale propensione per l'ottimizzazione dei processi. Come UX Designer cerco sempre il punto d'incontro tra le necessità dell'utente e gli obiettivi di business, con un occhio di riguardo per l'accessibilità e il design inclusivo.</span> <label for="about-toggle" class="btn-link-toggle"><span class="more">... Leggi di più</span></label></p>
+          <p>
+            Sono una collezionista di puzzle con meccanismo: amo studiare come i pezzi si incastrano per dare vita a un sistema perfetto. Risolvo i problemi identificando il pezzo mancante.
+            <input type="checkbox" id="about-toggle" hidden>
+            <span class="more-text">
+              Sono una persona estremamente risolutiva, con una spiccata attenzione ai dettagli e una naturale propensione per l'ottimizzazione dei processi. Come UX Designer cerco sempre il punto d'incontro tra le necessità dell'utente e gli obiettivi di business.
+            </span>
+            <label for="about-toggle" class="btn-link-toggle">
+              <span class="more">... Leggi di più</span>
+            </label>
+          </p>
         </div>
         <div class="about-actions-new">
           <a href="cv.html" class="btn-minimal btn-dark-outline">Il mio curriculum</a>
@@ -70,46 +90,7 @@
             </div>
           </article>
         </div>
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay"><span class="badge pink">UX Research</span><span class="badge blue">Strategy</span></div>
-              <img src="assets/img/discovery.png" alt="Progetto 2">
-            </div>
-            <div class="project-content">
-              <h3>UX Discovery e Strategia</h3>
-              <div class="checklist"><span>✓ User Interview</span> <span>✓ Journey</span></div>
-              <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
-            </div>
-          </article>
         </div>
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay"><span class="badge pink">Accessibility</span><span class="badge blue">UI Optimization</span></div>
-              <img src="assets/img/accessibility.png" alt="Progetto 3">
-            </div>
-            <div class="project-content">
-              <h3>Accessibilità e Design inclusivo</h3>
-              <div class="checklist"><span>✓ Contrast Audit</span> <span>✓ WCAG</span></div>
-              <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Esplora</a></div>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-md-6 animate">
-          <article class="project-card">
-            <div class="project-image">
-              <div class="photo-overlay"><span class="badge pink">Brand Identity</span><span class="badge blue">Adobe CC</span></div>
-              <img src="assets/img/GRAFICO.png" alt="Progetto 4">
-            </div>
-            <div class="project-content">
-              <h3>Brand Identity Design</h3>
-              <div class="checklist"><span>✓ Logo</span> <span>✓ Guidelines</span></div>
-              <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Scopri</a></div>
-            </div>
-          </article>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -119,66 +100,45 @@
         <h2>Lavoriamo insieme</h2>
         <p id="form-status"></p>
       </div>
-
       <form class="contact-form" id="contact-form">
         <div class="form-group mb-3">
           <label for="subject" class="form-label fw-bold">Come posso aiutarti?</label>
           <select id="subject" name="subject" class="form-select" required>
             <option value="" disabled selected>Seleziona un'opzione...</option>
-            <option value="brand">Voglio creare o rinnovare il mio brand</option>
-            <option value="ux">Ho bisogno di capire meglio i miei utenti</option>
-            <option value="access">Il mio sito non è accessibile a tutti</option>
-            <option value="altro">Altro</option>
+            <option value="Brand Identity">Voglio creare o rinnovare il mio brand</option>
+            <option value="UX Research">Ho bisogno di capire meglio i miei utenti</option>
+            <option value="Accessibilità">Il mio sito non è accessibile a tutti</option>
+            <option value="Altro">Altro</option>
           </select>
         </div>
-        <div class="form-group mb-3">
-          <label class="fw-bold">Nome</label>
-          <input type="text" name="name" class="form-control" required placeholder="Inserisci il tuo nome">
-        </div>
-        <div class="form-group mb-3">
-          <label class="fw-bold">Email</label>
-          <input type="email" name="email" class="form-control" required placeholder="la-tua@email.com">
-        </div>
-        <div class="form-group mb-3">
-          <label class="fw-bold">Messaggio</label>
-          <textarea name="message" class="form-control" rows="4" required placeholder="Di cosa hai bisogno?"></textarea>
-        </div>
-        <button type="submit" id="submit-btn" class="submit-btn w-100">
-          Invia Messaggio <i class="fas fa-paper-plane"></i>
-        </button>
+        <button type="submit" id="submit-btn" class="submit-btn w-100">Invia Messaggio</button>
       </form>
     </div>
   </section>
 
-  <script>
-    const btn = document.getElementById('submit-btn');
-    const status = document.getElementById('form-status');
+  <footer class="footer">
+    <div class="container text-center">
+      <p>© 2026 Imma Carano | Junior UXUI Designer</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:tua-email@esempio.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </footer>
 
+  <script>
+    // Script per EmailJS
+    const btn = document.getElementById('submit-btn');
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
       btn.innerHTML = 'Invio...';
-      btn.disabled = true;
-
       emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
         .then(() => {
-          status.style.color = "#34c759";
-          status.textContent = "Inviato! 🎉";
+          document.getElementById('form-status').textContent = "Messaggio inviato! 🎉";
           this.reset();
-          btn.innerHTML = 'Invia Messaggio <i class="fas fa-paper-plane"></i>';
-          btn.disabled = false;
-        }, (err) => {
-          status.style.color = "#ff3b30";
-          status.textContent = "Errore invio.";
           btn.innerHTML = 'Invia Messaggio';
-          btn.disabled = false;
         });
     });
-
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('is-visible'); });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.animate').forEach(el => obs.observe(el));
   </script>
 </body>
 </html>
-
