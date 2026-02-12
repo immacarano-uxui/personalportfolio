@@ -1,28 +1,33 @@
-(function () {
-  emailjs.init("YOUR_PUBLIC_KEY"); // <-- inserirai la tua Public Key
+(function() {
+    // Inizializzazione con la tua Public Key verificata dallo screenshot
+    emailjs.init("6L5hLDMadD0fwSwTZ"); 
 })();
 
-const form = document.getElementById("contact-form");
-const statusMessage = document.getElementById("form-status");
+window.onload = function() {
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
 
-  emailjs
-    .sendForm(
-      "YOUR_SERVICE_ID",   // es: service_xxxxx
-      "YOUR_TEMPLATE_ID",  // es: template_xxxxx
-      this
-    )
-    .then(
-      () => {
-        statusMessage.textContent = "Messaggio inviato con successo!";
-        form.reset();
-      },
-      (error) => {
-        statusMessage.textContent =
-          "Errore nell'invio. Riprova più tardi.";
-        console.error(error);
-      }
-    );
-});
+            // Cambio testo bottone per dare feedback all'utente
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'Invio in corso...';
+            submitBtn.disabled = true;
+
+            // Invio tramite i tuoi ID EmailJS
+            emailjs.sendForm('service_3w1hea8', 'template_vp58beq', this)
+                .then(function() {
+                    alert('Messaggio inviato con successo! 🎉');
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, function(error) {
+                    alert('Errore nell\'invio: ' + JSON.stringify(error));
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
+        });
+    }
+}
