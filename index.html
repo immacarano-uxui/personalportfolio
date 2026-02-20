@@ -30,34 +30,34 @@
     <input type="checkbox" id="menu-toggle" hidden>
     <div class="leader-inner container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/img/favicon.png" alt="Logo Imma Carano" width="35" height="35" class="d-inline-block align-top me-2">
+        <img src="assets/img/favicon.png" alt="Logo circolare Imma Carano" width="35" height="35" class="d-inline-block align-top me-2">
         <span class="fw-bold">Imma Carano</span>
       </a>
-      <label for="menu-toggle" class="hamburger">
+      <label for="menu-toggle" class="hamburger" aria-label="Apri menu di navigazione" role="button" tabindex="0">
         <span></span><span></span><span></span>
       </label>
 
-      <nav class="leader-nav">
+      <nav class="leader-nav" aria-label="Navigazione principale">
         <a href="#about">Chi sono</a>
         <a href="#projects">Progetti</a>
         <a href="cv.html" class="btn-cv-header">Curriculum</a>
         <a href="#contact" class="btn-contact-header">Lavoriamo insieme</a>
         <div class="header-socials">
-            <a href="https://github.com/immacarano-uxui" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/immacarano-uxui" target="_blank" aria-label="Profilo GitHub di Imma Carano"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" target="_blank" aria-label="Profilo LinkedIn di Imma Carano"><i class="fab fa-linkedin"></i></a>
         </div>
       </nav>
     </div>
 
-    <nav class="mobile-menu">
+    <nav class="mobile-menu" aria-label="Menu mobile">
       <a href="#about">Chi sono</a>
       <a href="#projects">Progetti</a>
       <a href="cv.html">Curriculum</a>
       <a href="#contact">Lavoriamo insieme</a>
       <hr>
       <div class="mobile-socials">
-          <a href="https://github.com/immacarano-uxui"><i class="fab fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/in/imma-carano-0ab933168/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/immacarano-uxui" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
     </nav>
     <label for="menu-toggle" class="menu-overlay"></label>
@@ -72,18 +72,18 @@
       
     <section id="about" class="intro container animate">
       <div class="intro-profile">
-        <img src="assets/img/imma.jpg" alt="Imma Carano" class="intro-avatar">
+        <img src="assets/img/imma.jpg" alt="Ritratto di Imma Carano, UXUI Designer" class="intro-avatar">
         <div class="about-content">
           <h2 class="about-title">Ciao! Sono Imma, UXUI Designer</h2>
           <div class="about-text">
             <p>
-             Sono una persona estremamente <strong>risolutiva</strong>, con una spiccata <strong>attenzione ai dettagli</strong> e una naturale propensione per l'<strong>ottimizzazione dei processi</strong>.
-              <input type="checkbox" id="about-toggle" hidden>
-              <span class="more-text">
-                Come UX Designer, attualmente impegnata in un Master specialistico, vedo l’esperienza utente come un sistema complesso dove ogni elemento deve essere progettato con senso e funzionalità per contribuire a un risultato finale armonioso, minimale ed elegante.
-                Il mio approccio è quello di una problem solver creativa: noto i dettagli, amo le cose che funzionano bene e cerco sempre il punto d'incontro tra le necessità dell'<strong>utente</strong> e gli obiettivi di business. Inoltre, sono una collezionista di puzzle con meccanismo: mi piace studiare come i pezzi si incastrano per dare vita a un sistema perfetto.
-              </span>
-              <label for="about-toggle" class="btn-link-toggle"><span class="more">... Leggi di più</span></label>
+               Sono una persona estremamente <strong>risolutiva</strong>, con una spiccata <strong>attenzione ai dettagli</strong> e una naturale propensione per l'<strong>ottimizzazione dei processi</strong>.
+               <input type="checkbox" id="about-toggle" hidden>
+               <span class="more-text">
+                 Come UX Designer, attualmente impegnata in un Master specialistico, vedo l’esperienza utente come un sistema complesso dove ogni elemento deve essere progettato con senso e funzionalità per contribuire a un risultato finale armonioso, minimale ed elegante.
+                 Il mio approccio è quello di una problem solver creativa: noto i dettagli, amo le cose che funzionano bene e cerco sempre il punto d'incontro tra le necessità dell'<strong>utente</strong> e gli obiettivi di business. Inoltre, sono una collezionista di puzzle con meccanismo: mi piace studiare come i pezzi si incastrano per dare vita a un sistema perfetto.
+               </span>
+               <label for="about-toggle" class="btn-link-toggle" role="button" tabindex="0" aria-label="Leggi di più sulla mia biografia"><span class="more">... Leggi di più</span></label>
             </p>
           </div>
           <div class="about-actions-new">
@@ -94,19 +94,19 @@
       </div>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects" aria-label="I miei progetti">
       <div class="container">
         <div class="row g-5 justify-content-center">
           <div class="col-12 col-md-6 animate">
             <article class="project-card">
               <div class="project-image">
                 <div class="photo-overlay"><span class="badge pink">Web</span><span class="badge blue">Frontend</span></div>
-                <img src="assets/img/UXUI DESIGN.png" alt="Progetto 1">
+                <img src="assets/img/UXUI DESIGN.png" alt="Anteprima del progetto UX Personal Portfolio: interfaccia web pulita">
               </div>
               <div class="project-content">
                 <h3>UX Personal Portfolio</h3>
                 <div class="checklist"><span>✓ HTML</span> <span>✓ CSS</span> <span>✓ Responsive</span></div>
-                <div class="card-action"><a href="assets/pdf/Progetto HTML e CSS di Imma Carano.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
+                <div class="card-action"><a href="assets/pdf/Progetto HTML e CSS di Imma Carano.pdf" class="btn-case-study" target="_blank" aria-label="Visualizza PDF progetto Portfolio">Visualizza</a></div>
               </div>
             </article>
           </div>
@@ -114,12 +114,12 @@
             <article class="project-card">
               <div class="project-image">
                 <div class="photo-overlay"><span class="badge pink">UX Research</span><span class="badge blue">Strategy</span></div>
-                <img src="assets/img/discovery.png" alt="Progetto 2">
+                <img src="assets/img/discovery.png" alt="Diagrammi di UX Discovery e Strategia: analisi utente">
               </div>
               <div class="project-content">
                 <h3>UX Discovery e Strategia</h3>
                 <div class="checklist"><span>✓ User Interview</span> <span>✓ Journey</span></div>
-                <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
+                <div class="card-action"><a href="assets/pdf/DISCOVERY.pdf" class="btn-case-study" target="_blank" aria-label="Visualizza PDF progetto Discovery">Visualizza</a></div>
               </div>
             </article>
           </div>
@@ -127,12 +127,12 @@
             <article class="project-card">
               <div class="project-image">
                 <div class="photo-overlay"><span class="badge pink">Accessibility</span><span class="badge blue">UI Optimization</span></div>
-                <img src="assets/img/accessibility.png" alt="Progetto 3">
+                <img src="assets/img/accessibility.png" alt="Analisi di accessibilità: audit dei contrasti e WCAG">
               </div>
               <div class="project-content">
                 <h3>Accessibilità e Design inclusivo</h3>
                 <div class="checklist"><span>✓ Contrast Audit</span> <span>✓ WCAG</span></div>
-                <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
+                <div class="card-action"><a href="assets/pdf/ACCESSIBILITY.pdf" class="btn-case-study" target="_blank" aria-label="Visualizza PDF progetto Accessibilità">Visualizza</a></div>
               </div>
             </article>
           </div>
@@ -140,12 +140,12 @@
             <article class="project-card">
               <div class="project-image">
                 <div class="photo-overlay"><span class="badge pink">Brand Identity</span><span class="badge blue">Adobe CC</span></div>
-                <img src="assets/img/GRAFICO.png" alt="Progetto 4">
+                <img src="assets/img/GRAFICO.png" alt="Esempio di Brand Identity: logo e linee guida grafiche">
               </div>
               <div class="project-content">
                 <h3>Brand Identity Design</h3>
                 <div class="checklist"><span>✓ Logo</span> <span>✓ Guidelines</span></div>
-                <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank">Visualizza</a></div>
+                <div class="card-action"><a href="assets/pdf/GRAFICO.pdf" class="btn-case-study" target="_blank" aria-label="Visualizza PDF progetto Brand Identity">Visualizza</a></div>
               </div>
             </article>
           </div>
@@ -155,7 +155,7 @@
 
     <section id="contact" class="contact">
       <div class="contact-inner animate">
-        <div class="contact-header"><h2>Lavoriamo insieme</h2><p id="form-status"></p></div>
+        <div class="contact-header"><h2>Lavoriamo insieme</h2><p id="form-status" aria-live="polite"></p></div>
         <form class="contact-form" id="contact-form">
           <div class="form-group mb-3">
             <label for="subject" class="form-label fw-bold">Come posso aiutarti?</label>
@@ -168,16 +168,16 @@
             </select>
           </div>
           <div class="form-group mb-3">
-            <label class="fw-bold">Nome</label>
-            <input type="text" name="name" class="form-control" required placeholder="Nome">
+            <label for="name" class="fw-bold">Nome</label>
+            <input type="text" id="name" name="name" class="form-control" required placeholder="Nome">
           </div>
           <div class="form-group mb-3">
-            <label class="fw-bold">Email</label>
-            <input type="email" name="email" class="form-control" required placeholder="la-tua@email.com">
+            <label for="email" class="fw-bold">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="la-tua@email.com">
           </div>
           <div class="form-group mb-3">
-            <label class="fw-bold">Messaggio</label>
-            <textarea name="message" class="form-control" rows="4" required placeholder="Il tuo messaggio"></textarea>
+            <label for="message" class="fw-bold">Messaggio</label>
+            <textarea id="message" name="message" class="form-control" rows="4" required placeholder="Il tuo messaggio"></textarea>
           </div>
           <button type="submit" id="submit-btn" class="submit-btn w-100">Invia Messaggio</button>
         </form>
@@ -193,15 +193,15 @@
             <p class="small mb-0">© 2026 | Junior UXUI Designer</p>
         </div>
         <div class="col-md-4 text-center mb-3 mb-md-0">
-            <div class="footer-nav">
+            <nav class="footer-nav" aria-label="Navigazione secondaria">
                 <a href="#about" class="mx-2 text-decoration-none text-dark">Chi sono</a>
                 <a href="#projects" class="mx-2 text-decoration-none text-dark">Progetti</a>
                 <a href="cv.html" class="mx-2 text-decoration-none text-dark">CV</a>
-            </div>
+            </nav>
         </div>
         <div class="col-md-4 text-center text-md-end">
-            <a href="https://github.com/immacarano-uxui" class="mx-2 text-dark" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-            <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" class="mx-2 text-dark" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/immacarano-uxui" class="mx-2 text-dark" target="_blank" aria-label="GitHub di Imma Carano"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/imma-carano-0ab933168/" class="mx-2 text-dark" target="_blank" aria-label="LinkedIn di Imma Carano"><i class="fab fa-linkedin fa-lg"></i></a>
         </div>
       </div>
     </div>
@@ -219,7 +219,7 @@
           this.reset();
           btn.innerHTML = 'Invia Messaggio';
         }, (err) => {
-          document.getElementById('form-status').textContent = "Errore.";
+          document.getElementById('form-status').textContent = "Errore durante l'invio.";
           btn.innerHTML = 'Invia Messaggio';
         });
     });
